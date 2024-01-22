@@ -15,6 +15,11 @@ import { AllClubsComponent } from './pages/all-clubs/all-clubs.component';
 import { CommentFormComponent } from './comments/comment-form/comment-form.component';
 import { CommentListComponent } from './comments/comment-list/comment-list.component';
 import { PostCardComponent } from './layouts/post-card/post-card.component';
+import { SignInComponent } from './authentification/sign-in/sign-in.component';
+import { SignUpComponent } from './authentification/sign-up/sign-up.component';
+import { SignUpClubComponent } from './authentification/sign-up-club/sign-up-club.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,11 +35,16 @@ import { PostCardComponent } from './layouts/post-card/post-card.component';
     AllClubsComponent,
     CommentFormComponent,
     CommentListComponent,
-    PostCardComponent
+    PostCardComponent,
+    SignInComponent,
+    SignUpComponent,
+    SignUpClubComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

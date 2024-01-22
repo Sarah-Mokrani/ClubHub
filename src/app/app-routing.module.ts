@@ -11,6 +11,9 @@ import { HeaderComponent } from './layouts/header/header.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { CommentFormComponent } from './comments/comment-form/comment-form.component';
 import { CommentListComponent } from './comments/comment-list/comment-list.component';
+import { SignInComponent } from './authentification/sign-in/sign-in.component';
+import { SignUpClubComponent } from './authentification/sign-up-club/sign-up-club.component';
+import { SignUpComponent } from './authentification/sign-up/sign-up.component';
 
 const routes: Routes = [
 {path :'' , component: HomeComponent},
@@ -24,6 +27,9 @@ const routes: Routes = [
 {path :'navbar' , component:NavbarComponent},
 {path :'comment-form' , component:CommentFormComponent},
 {path :'comment-list' , component:CommentListComponent},
+{path :'sign-in' , component:SignInComponent},
+{path :'sign-up' , component:SignUpComponent},
+{path :'sign-up-club' , component:SignUpClubComponent},
 
 
 ];
